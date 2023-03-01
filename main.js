@@ -30,41 +30,41 @@ btn.addEventListener('click', function () {
         .catch(err => alert('You entered Wrong city name'))
 })
 
-btn.addEventListener('click',function showTime() {
-    var date = new Date();
-    var h = date.getHours(); 
-    var m = date.getMinutes(); 
-    var s = date.getSeconds(); 
-    var session = "am";
+// btn.addEventListener('click',function showTime() {
+//     var date = new Date();
+//     var h = date.getHours(); 
+//     var m = date.getMinutes(); 
+//     var s = date.getSeconds(); 
+//     var session = "am";
 
-    if (h == 0) {
-        h = 12;
-    }
+//     if (h == 0) {
+//         h = 12;
+//     }
 
-    if (h > 12) {
-        h = h - 12;
-        session = "pm";
-    }
+//     if (h > 12) {
+//         h = h - 12;
+//         session = "pm";
+//     }
 
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
+//     h = (h < 10) ? "0" + h : h;
+//     m = (m < 10) ? "0" + m : m;
+//     s = (s < 10) ? "0" + s : s;
 
-    var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
+//     var time = h + ":" + m + ":" + s + " " + session;
+//     document.getElementById("MyClockDisplay").innerText = time;
+//     document.getElementById("MyClockDisplay").textContent = time;
 
-    setTimeout(showTime, 1000);
+//     setTimeout(showTime, 1000);
 
-})
+// })
 
-function showDate(){
-        let newdate = new Date();
-        let dt = newdate.getDate();
-        let mt = newdate.getMonth();
-        let yr = newdate.getFullYear();
-        var date = dt+"/"+mt+"/"+yr;
-        document.getElementById("MyDateDisplay").innerText = date;
-        document.getElementById("MyDateDisplay").textContent = date;   
-        setInterval(showDate, 1000);
-}
+// function showDate(){
+//         let newdate = new Date();
+//         let dt = newdate.getDate();
+//         let mt = newdate.getMonth();
+//         let yr = newdate.getFullYear();
+//         var date = dt+"/"+mt+"/"+yr;
+//         document.getElementById("MyDateDisplay").innerText = date;
+//         document.getElementById("MyDateDisplay").textContent = date;   
+//         setInterval(showDate, 1000);
+// }
